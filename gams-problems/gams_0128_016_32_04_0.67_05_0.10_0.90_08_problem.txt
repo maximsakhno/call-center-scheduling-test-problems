@@ -1,0 +1,98 @@
+option resLim=3600;
+
+sets
+         operators /1*128/
+         campaigns /1*16/
+         time_intervals /1*32/;
+
+scalars
+         lunching_time_interval_count /4/
+         max_skill /100/;
+
+parameters
+         can_work(operators, time_intervals)
+         cost(operators, time_intervals)
+         can_lunch(operators, time_intervals)
+         can_assign(operators, campaigns)
+         skills(operators, campaigns)
+         min_working_time_interval_counts(operators)
+         max_working_time_interval_counts(operators)
+         required_operator_counts(campaigns, time_intervals);
+
+$include problems\gams_0128_016_32_04_0.67_05_0.10_0.90_08.inc
+
+binary variable working(operators, time_intervals);
+binary variable started_working(operators, time_intervals);
+binary variable lunching(operators, time_intervals);
+binary variable started_lunching(operators, time_intervals);
+binary variable assigned(operators, campaigns, time_intervals);
+variable Cmin;
+
+equations
+         x1(operators, time_intervals)
+         x2(operators, time_intervals)
+
+         x3(operators, time_intervals)
+
+         x7(operators)
+         x8(operators, time_intervals)
+
+         x9(operators, time_intervals)
+         x10(operators)
+         x11(operators, time_intervals)
+         x12(operators)
+
+         x13(operators, campaigns, time_intervals)
+
+         x15(operators)
+         x16(operators)
+
+         x17(campaigns, time_intervals)
+
+         x18;
+
+         x1(operators, time_intervals).. working(operators, time_intervals) =l= can_work(operators, time_intervals);
+         x2(operators, time_intervals).. working(operators, time_intervals) =l= 1 - lunching(operators, time_intervals);
+
+         x3(operators, time_intervals).. working(operators, time_intervals) =g= sum(campaigns, assigned(operators, campaigns, time_intervals));
+
+         x7(operators).. sum(time_intervals, started_working(operators, time_intervals)) =e= 1;
+         x8(operators, time_intervals).. ((working(operators, time_intervals) + lunching(operators, time_intervals)) - (working(operators, time_intervals - 1) + lunching(operators, time_intervals - 1))) =l= started_working(operators, time_intervals);
+
+         x9(operators, time_intervals).. lunching(operators, time_intervals) =l= can_lunch(operators, time_intervals);
+         x10(operators).. sum(time_intervals, started_lunching(operators, time_intervals)) =e= 1;
+         x11(operators, time_intervals).. (lunching(operators, time_intervals) - lunching(operators, time_intervals - 1)) =l= started_lunching(operators, time_intervals);
+         x12(operators).. sum(time_intervals, lunching(operators, time_intervals)) =e= lunching_time_interval_count;
+
+         x13(operators, campaigns, time_intervals).. assigned(operators, campaigns, time_intervals) =l= can_assign(operators, campaigns);
+
+         x15(operators).. sum(campaigns, sum(time_intervals, assigned(operators, campaigns, time_intervals))) =g= min_working_time_interval_counts(operators);
+         x16(operators).. sum(campaigns, sum(time_intervals, assigned(operators, campaigns, time_intervals))) =l= max_working_time_interval_counts(operators);
+
+         x17(campaigns, time_intervals).. sum(operators, assigned(operators, campaigns, time_intervals)) =e= required_operator_counts(campaigns, time_intervals);
+
+         x18.. sum(operators, sum(campaigns, sum(time_intervals, (assigned(operators, campaigns, time_intervals) * skills(operators, campaigns))))) =g= Cmin
+
+model mymodel /all/;
+solve mymodel using mip maximizing Cmin;
+display working.l, lunching.l, assigned.l;
+
+File results / problems\gams_0128_016_32_04_0.67_05_0.10_0.90_08_results.txt /;
+put results /;
+put "Result:", Cmin.l /;
+put /;
+put "Working: " /;
+loop((operators,time_intervals),
+         put operators.tl, time_intervals.tl, working.l(operators,time_intervals)
+/);
+put /;
+put "Lunching: " /;
+loop((operators,time_intervals),
+         put operators.tl, time_intervals.tl, lunching.l(operators,time_intervals)
+/);
+put /;
+put "Assigned: " /;
+loop((operators, campaigns,time_intervals),
+         put operators.tl, time_intervals.tl, campaigns.tl, assigned.l(operators,campaigns,time_intervals)
+/);
+putclose;
