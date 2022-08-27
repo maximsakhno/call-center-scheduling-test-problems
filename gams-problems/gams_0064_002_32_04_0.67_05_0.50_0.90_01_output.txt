@@ -1,0 +1,169 @@
+--- Job gams_0064_002_32_04_0.67_05_0.50_0.90_01_problem.txt Start 02/24/21 20:04:48 35.2.0 r33388c4 WEX-WEI x86 64bit/MS Windows
+--- Applying:
+    C:\Users\MariaSosnovskaya\GAMS35\gmsprmNT.txt
+--- GAMS Parameters defined
+    Input C:\Users\MariaSosnovskaya\Downloads\WfmGams3\problems\gams_0064_002_32_04_0.67_05_0.50_0.90_01_problem.txt
+    ScrDir C:\Users\MariaSosnovskaya\Downloads\WfmGams3\225f\
+    SysDir C:\Users\MariaSosnovskaya\GAMS35\
+Licensee: GAMS Evaluation License                        S210124/0001AB-GEN
+          Sobolev Institute of Mathematics, Discrete Optimization LaDCE1098
+          C:\Users\MariaSosnovskaya\GAMS35\gamslice.txt
+          Evaluation license: Not for commercial or production use
+GAMS 35.2.0   Copyright (C) 1987-2021 GAMS Development. All rights reserved
+--- Starting compilation
+--- gams_0064_002_32_04_0.67_05_0.50_0.90_01_problem.txt(22) 3 Mb
+--- . gams_0064_002_32_04_0.67_05_0.50_0.90_01.inc(6600) 3 Mb
+--- gams_0064_002_32_04_0.67_05_0.50_0.90_01_problem.txt(98) 3 Mb
+--- Starting execution: elapsed 0:00:00.039
+--- gams_0064_002_32_04_0.67_05_0.50_0.90_01_problem.txt(6621) 4 Mb
+--- Generating MIP model mymodel
+--- gams_0064_002_32_04_0.67_05_0.50_0.90_01_problem.txt(6677) 9 Mb
+---   16,769 rows  12,289 columns  56,481 non-zeroes
+---   12,288 discrete-columns
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:00.187
+
+IBM ILOG CPLEX   35.2.0 r33388c4 Released Jun 02, 2021 WEI x86 64bit/MS Window
+
+--- GAMS/Cplex licensed for continuous and discrete problems.
+--- Space for names approximately 0.61 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 6.31 Mb (peak 6.40 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 20.1.0.1 link memory 0.43 Mb (peak 1.99 Mb)
+--- Starting Cplex
+
+Version identifier: 20.1.0.1 | 2021-04-07 | 3a818710c
+CPXPARAM_Advance                                 0
+CPXPARAM_Threads                                 1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_TimeLimit                               3600
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Generic callback                                 0x50
+Tried aggregator 2 times.
+MIP Presolve eliminated 8321 rows and 738 columns.
+Aggregator did 192 substitutions.
+Reduced MIP has 8256 rows, 11360 columns, and 38155 nonzeros.
+Reduced MIP has 11360 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.06 sec. (42.62 ticks)
+Probing fixed 872 vars, tightened 0 bounds.
+Probing changed sense of 42 constraints.
+Probing time = 0.08 sec. (29.93 ticks)
+Tried aggregator 16 times.
+MIP Presolve eliminated 336 rows and 935 columns.
+Aggregator did 336 substitutions.
+Reduced MIP has 7584 rows, 10089 columns, and 34353 nonzeros.
+Reduced MIP has 10089 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.61 sec. (322.98 ticks)
+Probing time = 0.02 sec. (4.49 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 7584 rows, 10089 columns, and 34353 nonzeros.
+Reduced MIP has 10089 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.05 sec. (30.84 ticks)
+Probing time = 0.00 sec. (4.49 ticks)
+Clique table members: 25144.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time = 0.02 sec. (5.15 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =          8375.000000
+Perturbation started.
+Iteration:   101   Dual objective     =          8375.000000
+Iteration:   481   Dual objective     =          8374.999820
+Iteration:   850   Dual objective     =          8374.999699
+Iteration:  1208   Dual objective     =          8374.999580
+Iteration:  1543   Dual objective     =          8374.999482
+Iteration:  1914   Dual objective     =          8374.999365
+Iteration:  2286   Dual objective     =          8374.999244
+Iteration:  2626   Dual objective     =          8374.999193
+Iteration:  2977   Dual objective     =          8374.999146
+Iteration:  3302   Dual objective     =          8374.999115
+Iteration:  3615   Dual objective     =          8374.999087
+Iteration:  3922   Dual objective     =          8374.999069
+Iteration:  4223   Dual objective     =          8374.999053
+Iteration:  4499   Dual objective     =          8374.999039
+Iteration:  4774   Dual objective     =          8374.999026
+Iteration:  5027   Dual objective     =          8374.999013
+Iteration:  5243   Dual objective     =          8374.999007
+Iteration:  5466   Dual objective     =          8374.998998
+Iteration:  5655   Dual objective     =          8374.998992
+Iteration:  5810   Dual objective     =          8374.998987
+Iteration:  5962   Dual objective     =          8374.998983
+Iteration:  6099   Dual objective     =          8374.998980
+Iteration:  6232   Dual objective     =          8374.998977
+Iteration:  6366   Dual objective     =          8374.998974
+Iteration:  6495   Dual objective     =          8374.998972
+Iteration:  6620   Dual objective     =          8374.998969
+Iteration:  6746   Dual objective     =          8374.998967
+Iteration:  6870   Dual objective     =          8374.998966
+Iteration:  6996   Dual objective     =          8374.998965
+Iteration:  7119   Dual objective     =          8374.998965
+Iteration:  7238   Dual objective     =          8374.998964
+Removing perturbation.
+Root relaxation solution time = 0.83 sec. (490.82 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0     8375.0000  1404                   8375.0000     7289         
+      0     0     8375.0000   632                    Cuts: 13     7656         
+      0     0     8375.0000   621                    Cuts: 85     8549         
+      0     0     8375.0000   498                ZeroHalf: 72     8987         
+      0     0     8375.0000   494                    Cuts: 58     9359         
+      0     0     8375.0000   451                ZeroHalf: 44     9687         
+      0     0     8375.0000   474                ZeroHalf: 71     9923         
+*     0+    0                         8375.0000     8375.0000             0.00%
+Found incumbent of value 8375.000000 after 5.30 sec. (3088.09 ticks)
+      0     0        cutoff           8375.0000     8375.0000     9923    0.00%
+Elapsed time = 5.30 sec. (3088.09 ticks, tree = 0.01 MB, solutions = 1)
+
+Zero-half cuts applied:  107
+Lift and project cuts applied:  5
+Gomory fractional cuts applied:  10
+
+Root node processing (before b&c):
+  Real time             =    5.30 sec. (3088.66 ticks)
+Sequential b&c:
+  Real time             =    0.00 sec. (0.00 ticks)
+                          ------------
+Total (root+branch&cut) =    5.30 sec. (3088.66 ticks)
+
+--- MIP status (101): integer optimal solution.
+--- Cplex Time: 5.30sec (det. 3088.69 ticks)
+
+--- Fixing integer variables and solving final LP...
+
+Version identifier: 20.1.0.1 | 2021-04-07 | 3a818710c
+CPXPARAM_Advance                                 2
+CPXPARAM_Threads                                 1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_TimeLimit                               3600
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 16769 rows and 12290 columns.
+All rows and columns eliminated.
+Presolve time = 0.00 sec. (7.10 ticks)
+
+--- Fixed MIP status (1): optimal.
+--- Cplex Time: 0.02sec (det. 12.44 ticks)
+
+
+Proven optimal solution
+MIP Solution:         8375.000000    (9923 iterations, 0 nodes)
+Final Solve:          8375.000000    (0 iterations)
+
+Best possible:        8375.000000
+Absolute gap:            0.000000
+Relative gap:            0.000000
+
+--- Reading solution for model mymodel
+--- Executing after solve: elapsed 0:00:05.697
+--- gams_0064_002_32_04_0.67_05_0.50_0.90_01_problem.txt(6678) 9 Mb--- gams_0064_002_32_04_0.67_05_0.50_0.90_01_problem.txt(6698) 9 Mb
+--- Putfile results C:\Users\MariaSosnovskaya\Downloads\WfmGams3\problems\gams_0064_002_32_04_0.67_05_0.50_0.90_01_results.txt
+*** Status: Normal completion
+--- Job gams_0064_002_32_04_0.67_05_0.50_0.90_01_problem.txt Stop 02/24/21 20:04:54 elapsed 0:00:05.719

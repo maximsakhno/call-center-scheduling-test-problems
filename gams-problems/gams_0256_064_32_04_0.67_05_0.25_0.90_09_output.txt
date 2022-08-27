@@ -1,0 +1,547 @@
+--- Job gams_0256_064_32_04_0.67_05_0.25_0.90_09_problem.txt Start 02/25/21 11:15:31 35.2.0 r33388c4 WEX-WEI x86 64bit/MS Windows
+--- Applying:
+    C:\Users\MariaSosnovskaya\GAMS35\gmsprmNT.txt
+--- GAMS Parameters defined
+    Input C:\Users\MariaSosnovskaya\Downloads\WfmGams3\problems\gams_0256_064_32_04_0.67_05_0.25_0.90_09_problem.txt
+    ScrDir C:\Users\MariaSosnovskaya\Downloads\WfmGams3\225h\
+    SysDir C:\Users\MariaSosnovskaya\GAMS35\
+Licensee: GAMS Evaluation License                        S210124/0001AB-GEN
+          Sobolev Institute of Mathematics, Discrete Optimization LaDCE1098
+          C:\Users\MariaSosnovskaya\GAMS35\gamslice.txt
+          Evaluation license: Not for commercial or production use
+GAMS 35.2.0   Copyright (C) 1987-2021 GAMS Development. All rights reserved
+--- Starting compilation
+--- gams_0256_064_32_04_0.67_05_0.25_0.90_09_problem.txt(22) 3 Mb
+--- . gams_0256_064_32_04_0.67_05_0.25_0.90_09.inc(25080) 5 Mb--- . gams_0256_064_32_04_0.67_05_0.25_0.90_09.inc(53998) 7 Mb--- . gams_0256_064_32_04_0.67_05_0.25_0.90_09.inc(59912) 8 Mb
+--- gams_0256_064_32_04_0.67_05_0.25_0.90_09_problem.txt(98) 8 Mb
+--- Starting execution: elapsed 0:00:00.326
+--- gams_0256_064_32_04_0.67_05_0.25_0.90_09_problem.txt(59933) 9 Mb
+--- Generating MIP model mymodel
+--- gams_0256_064_32_04_0.67_05_0.25_0.90_09_problem.txt(59969) 14 Mb--- gams_0256_064_32_04_0.67_05_0.25_0.90_09_problem.txt(59969) 27 Mb--- gams_0256_064_32_04_0.67_05_0.25_0.90_09_problem.txt(59969) 74 Mb--- gams_0256_064_32_04_0.67_05_0.25_0.90_09_problem.txt(59969) 81 Mb--- gams_0256_064_32_04_0.67_05_0.25_0.90_09_problem.txt(59979) 164 Mb--- gams_0256_064_32_04_0.67_05_0.25_0.90_09_problem.txt(59979) 199 Mb--- gams_0256_064_32_04_0.67_05_0.25_0.90_09_problem.txt(59981) 200 Mb--- gams_0256_064_32_04_0.67_05_0.25_0.90_09_problem.txt(59982) 212 Mb--- gams_0256_064_32_04_0.67_05_0.25_0.90_09_problem.txt(59982) 218 Mb--- gams_0256_064_32_04_0.67_05_0.25_0.90_09_problem.txt(59984) 221 Mb--- gams_0256_064_32_04_0.67_05_0.25_0.90_09_problem.txt(59984) 224 Mb--- gams_0256_064_32_04_0.67_05_0.25_0.90_09_problem.txt(59984) 243 Mb--- gams_0256_064_32_04_0.67_05_0.25_0.90_09_problem.txt(59986) 243 Mb--- gams_0256_064_32_04_0.67_05_0.25_0.90_09_problem.txt(59986) 244 Mb--- gams_0256_064_32_04_0.67_05_0.25_0.90_09_problem.txt(59989) 244 Mb--- gams_0256_064_32_04_0.67_05_0.25_0.90_09_problem.txt(59989) 248 Mb
+---   576,769 rows  557,057 columns  2,779,073 non-zeroes
+---   557,056 discrete-columns
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:04.980
+
+IBM ILOG CPLEX   35.2.0 r33388c4 Released Jun 02, 2021 WEI x86 64bit/MS Window
+
+--- GAMS/Cplex licensed for continuous and discrete problems.
+--- Space for names approximately 26.45 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 257.18 Mb (peak 261.43 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 20.1.0.1 link memory 17.23 Mb (peak 89.31 Mb)
+--- Starting Cplex
+
+Version identifier: 20.1.0.1 | 2021-04-07 | 3a818710c
+CPXPARAM_Advance                                 0
+CPXPARAM_Threads                                 1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_TimeLimit                               3600
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Generic callback                                 0x50
+Tried aggregator 2 times.
+MIP Presolve eliminated 541312 rows and 498216 columns.
+Aggregator did 768 substitutions.
+Reduced MIP has 34689 rows, 58074 columns, and 190883 nonzeros.
+Reduced MIP has 58074 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 1.61 sec. (656.44 ticks)
+Probing fixed 2827 vars, tightened 0 bounds.
+Probing changed sense of 207 constraints.
+Probing time = 0.89 sec. (154.49 ticks)
+Tried aggregator 16 times.
+Detecting symmetries...
+MIP Presolve eliminated 1305 rows and 3085 columns.
+Aggregator did 1305 substitutions.
+Reduced MIP has 32079 rows, 53684 columns, and 177253 nonzeros.
+Reduced MIP has 53684 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 4.59 sec. (1604.65 ticks)
+Probing time = 0.09 sec. (13.76 ticks)
+Clique table members: 125850.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time = 0.06 sec. (26.36 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =         33129.000000
+Perturbation started.
+Iteration:   101   Dual objective     =         33129.000000
+Iteration:   939   Dual objective     =         33122.999419
+Iteration:  1766   Dual objective     =         33111.998889
+Iteration:  2628   Dual objective     =         33102.998562
+Iteration:  3380   Dual objective     =         33089.331654
+Iteration:  4129   Dual objective     =         33089.331407
+Iteration:  4916   Dual objective     =         33089.331157
+Iteration:  5672   Dual objective     =         33087.330932
+Iteration:  6459   Dual objective     =         33086.330720
+Iteration:  7224   Dual objective     =         33086.330490
+Iteration:  7989   Dual objective     =         33086.330270
+Iteration:  8777   Dual objective     =         33086.330060
+Iteration:  9508   Dual objective     =         33083.329916
+Iteration: 10197   Dual objective     =         33077.996482
+Iteration: 10898   Dual objective     =         33072.996392
+Iteration: 11649   Dual objective     =         33072.996276
+Iteration: 12362   Dual objective     =         33070.996173
+Iteration: 13049   Dual objective     =         33065.996101
+Iteration: 13760   Dual objective     =         33064.996006
+Iteration: 14442   Dual objective     =         33062.995940
+Iteration: 15087   Dual objective     =         33061.995876
+Iteration: 15745   Dual objective     =         33061.995819
+Iteration: 16377   Dual objective     =         33061.995766
+Iteration: 16978   Dual objective     =         33061.995722
+Iteration: 17607   Dual objective     =         33058.995684
+Iteration: 18223   Dual objective     =         33055.995642
+Iteration: 18799   Dual objective     =         33049.995607
+Iteration: 19401   Dual objective     =         33045.995578
+Iteration: 19985   Dual objective     =         33045.995543
+Iteration: 20577   Dual objective     =         33045.995506
+Iteration: 21160   Dual objective     =         33044.995476
+Iteration: 21733   Dual objective     =         33044.995444
+Iteration: 22300   Dual objective     =         33043.995413
+Iteration: 22660   Dual objective     =         33043.995386
+Iteration: 23025   Dual objective     =         33043.995359
+Iteration: 23341   Dual objective     =         33042.995346
+Iteration: 23722   Dual objective     =         33038.995318
+Iteration: 24014   Dual objective     =         33038.995304
+Iteration: 24345   Dual objective     =         33036.661946
+Iteration: 24691   Dual objective     =         33030.995252
+Iteration: 24992   Dual objective     =         33030.995228
+Iteration: 25321   Dual objective     =         33030.995212
+Iteration: 25599   Dual objective     =         33030.995182
+Iteration: 25878   Dual objective     =         33030.995147
+Iteration: 26155   Dual objective     =         33030.995108
+Iteration: 26454   Dual objective     =         33023.384065
+Iteration: 26767   Dual objective     =         33022.409971
+Iteration: 27091   Dual objective     =         33020.210438
+Iteration: 27466   Dual objective     =         33013.724312
+Iteration: 27805   Dual objective     =         33011.536801
+Iteration: 28100   Dual objective     =         33011.536775
+Iteration: 28385   Dual objective     =         33010.947491
+Iteration: 28658   Dual objective     =         33010.947476
+Iteration: 28922   Dual objective     =         33010.947464
+Iteration: 29209   Dual objective     =         33010.947429
+Iteration: 29460   Dual objective     =         33002.947446
+Iteration: 29709   Dual objective     =         33002.947432
+Iteration: 29987   Dual objective     =         33002.947417
+Iteration: 30186   Dual objective     =         33002.947404
+Iteration: 30437   Dual objective     =         33002.947387
+Iteration: 30684   Dual objective     =         33002.947373
+Iteration: 30943   Dual objective     =         33002.947364
+Iteration: 31192   Dual objective     =         33000.894952
+Iteration: 31490   Dual objective     =         32997.644951
+Iteration: 31736   Dual objective     =         32997.644937
+Iteration: 32007   Dual objective     =         32994.794949
+Iteration: 32246   Dual objective     =         32993.978274
+Iteration: 32459   Dual objective     =         32993.978262
+Iteration: 32665   Dual objective     =         32993.978248
+Iteration: 32943   Dual objective     =         32993.394905
+Iteration: 33174   Dual objective     =         32993.394895
+Iteration: 33395   Dual objective     =         32993.394880
+Iteration: 33617   Dual objective     =         32993.394867
+Iteration: 33844   Dual objective     =         32993.394854
+Iteration: 34069   Dual objective     =         32993.394837
+Iteration: 34289   Dual objective     =         32993.394818
+Iteration: 34508   Dual objective     =         32993.394790
+Iteration: 34737   Dual objective     =         32990.728158
+Iteration: 34954   Dual objective     =         32990.728137
+Iteration: 35178   Dual objective     =         32990.728067
+Iteration: 35400   Dual objective     =         32989.888244
+Iteration: 35623   Dual objective     =         32989.888231
+Iteration: 35836   Dual objective     =         32988.724444
+Iteration: 36076   Dual objective     =         32988.724416
+Iteration: 36302   Dual objective     =         32988.724384
+Iteration: 36500   Dual objective     =         32988.724368
+Iteration: 36711   Dual objective     =         32988.553996
+Iteration: 36919   Dual objective     =         32988.553975
+Iteration: 37107   Dual objective     =         32988.220632
+Iteration: 37319   Dual objective     =         32988.220611
+Iteration: 37519   Dual objective     =         32988.220599
+Elapsed time = 51.07 sec. (10000.41 ticks, 37634 iterations)
+Iteration: 37719   Dual objective     =         32988.220586
+Iteration: 37922   Dual objective     =         32988.220574
+Iteration: 38120   Dual objective     =         32988.220562
+Iteration: 38311   Dual objective     =         32988.220548
+Iteration: 38512   Dual objective     =         32988.073883
+Iteration: 38715   Dual objective     =         32988.073869
+Iteration: 38911   Dual objective     =         32988.073846
+Iteration: 39105   Dual objective     =         32988.073827
+Iteration: 39302   Dual objective     =         32988.073802
+Iteration: 39534   Dual objective     =         32987.392596
+Iteration: 39750   Dual objective     =         32987.392502
+Iteration: 39942   Dual objective     =         32987.392425
+Iteration: 40151   Dual objective     =         32987.392313
+Iteration: 40361   Dual objective     =         32987.392239
+Iteration: 40594   Dual objective     =         32987.386370
+Iteration: 40829   Dual objective     =         32987.386184
+Iteration: 41070   Dual objective     =         32987.385945
+Iteration: 41322   Dual objective     =         32987.385677
+Iteration: 41557   Dual objective     =         32987.385490
+Iteration: 41802   Dual objective     =         32987.385228
+Iteration: 42043   Dual objective     =         32987.384997
+Iteration: 42294   Dual objective     =         32987.384805
+Iteration: 42527   Dual objective     =         32987.384605
+Iteration: 42768   Dual objective     =         32987.384429
+Iteration: 42996   Dual objective     =         32987.384266
+Iteration: 43228   Dual objective     =         32987.384077
+Iteration: 43454   Dual objective     =         32987.383942
+Iteration: 43711   Dual objective     =         32987.383620
+Iteration: 43949   Dual objective     =         32987.383291
+Iteration: 44193   Dual objective     =         32987.382935
+Iteration: 44469   Dual objective     =         32987.382645
+Iteration: 44723   Dual objective     =         32987.382260
+Iteration: 44953   Dual objective     =         32987.381905
+Iteration: 45211   Dual objective     =         32987.381621
+Iteration: 45457   Dual objective     =         32987.381328
+Iteration: 45688   Dual objective     =         32987.380930
+Iteration: 45912   Dual objective     =         32987.380246
+Iteration: 46161   Dual objective     =         32987.379980
+Iteration: 46389   Dual objective     =         32987.379560
+Iteration: 46632   Dual objective     =         32987.379111
+Iteration: 46865   Dual objective     =         32987.378598
+Iteration: 47103   Dual objective     =         32987.377383
+Iteration: 47367   Dual objective     =         32986.836031
+Elapsed time = 100.62 sec. (20000.63 ticks, 47437 iterations)
+Iteration: 47619   Dual objective     =         32986.621842
+Iteration: 47874   Dual objective     =         32986.619689
+Iteration: 48119   Dual objective     =         32986.619154
+Iteration: 48374   Dual objective     =         32986.618378
+Iteration: 48604   Dual objective     =         32986.617891
+Iteration: 48826   Dual objective     =         32986.615959
+Iteration: 49061   Dual objective     =         32986.615642
+Iteration: 49295   Dual objective     =         32986.614868
+Iteration: 49556   Dual objective     =         32986.613520
+Iteration: 49808   Dual objective     =         32986.608980
+Iteration: 50078   Dual objective     =         32986.608128
+Iteration: 50326   Dual objective     =         32986.607290
+Iteration: 50599   Dual objective     =         32986.606164
+Iteration: 50882   Dual objective     =         32986.604268
+Iteration: 51133   Dual objective     =         32986.602352
+Iteration: 51413   Dual objective     =         32986.601321
+Iteration: 51679   Dual objective     =         32986.600315
+Iteration: 51929   Dual objective     =         32986.598864
+Iteration: 52191   Dual objective     =         32986.597286
+Iteration: 52444   Dual objective     =         32986.595701
+Iteration: 52685   Dual objective     =         32986.594212
+Iteration: 52934   Dual objective     =         32986.592908
+Iteration: 53185   Dual objective     =         32986.590789
+Iteration: 53437   Dual objective     =         32986.588822
+Iteration: 53680   Dual objective     =         32986.579463
+Iteration: 53918   Dual objective     =         32986.573009
+Iteration: 54147   Dual objective     =         32986.570337
+Iteration: 54411   Dual objective     =         32986.552278
+Iteration: 54675   Dual objective     =         32986.523216
+Iteration: 54955   Dual objective     =         32986.506811
+Iteration: 55251   Dual objective     =         32986.495734
+Iteration: 55541   Dual objective     =         32986.484962
+Iteration: 55823   Dual objective     =         32986.446372
+Iteration: 56173   Dual objective     =         32986.331467
+Iteration: 56554   Dual objective     =         32986.280248
+Iteration: 56878   Dual objective     =         32985.756071
+Iteration: 57236   Dual objective     =         32985.164748
+Iteration: 57595   Dual objective     =         32984.840943
+Iteration: 57867   Dual objective     =         32984.501182
+Iteration: 58195   Dual objective     =         32984.396122
+Iteration: 58491   Dual objective     =         32984.281729
+Iteration: 58782   Dual objective     =         32984.277068
+Iteration: 59077   Dual objective     =         32984.251777
+Iteration: 59365   Dual objective     =         32984.218510
+Iteration: 59656   Dual objective     =         32984.106927
+Iteration: 59952   Dual objective     =         32983.887245
+Iteration: 60231   Dual objective     =         32983.567855
+Iteration: 60521   Dual objective     =         32983.505539
+Iteration: 60824   Dual objective     =         32983.481992
+Iteration: 61066   Dual objective     =         32983.481686
+Iteration: 61323   Dual objective     =         32983.480291
+Iteration: 61570   Dual objective     =         32983.145610
+Iteration: 61829   Dual objective     =         32983.018778
+Elapsed time = 151.21 sec. (30000.87 ticks, 62040 iterations)
+Iteration: 62160   Dual objective     =         32982.858320
+Iteration: 62450   Dual objective     =         32982.599998
+Iteration: 62696   Dual objective     =         32982.516461
+Iteration: 62932   Dual objective     =         32982.466988
+Iteration: 63225   Dual objective     =         32982.298118
+Iteration: 63487   Dual objective     =         32982.156140
+Iteration: 63747   Dual objective     =         32981.937345
+Iteration: 64005   Dual objective     =         32981.782763
+Iteration: 64250   Dual objective     =         32981.744471
+Iteration: 64510   Dual objective     =         32981.731162
+Iteration: 64759   Dual objective     =         32981.731009
+Iteration: 64994   Dual objective     =         32981.672973
+Iteration: 65222   Dual objective     =         32981.672907
+Iteration: 65466   Dual objective     =         32981.660422
+Iteration: 65718   Dual objective     =         32981.557971
+Iteration: 65980   Dual objective     =         32981.422415
+Iteration: 66220   Dual objective     =         32981.312510
+Iteration: 66476   Dual objective     =         32981.076087
+Iteration: 66750   Dual objective     =         32980.853877
+Iteration: 66964   Dual objective     =         32980.853616
+Iteration: 67236   Dual objective     =         32980.853498
+Iteration: 67446   Dual objective     =         32980.853323
+Iteration: 67662   Dual objective     =         32980.853191
+Iteration: 67911   Dual objective     =         32980.852742
+Iteration: 68170   Dual objective     =         32980.852005
+Iteration: 68423   Dual objective     =         32980.847833
+Iteration: 68682   Dual objective     =         32980.749283
+Iteration: 68928   Dual objective     =         32980.677316
+Iteration: 69193   Dual objective     =         32980.580385
+Iteration: 69497   Dual objective     =         32980.563763
+Iteration: 69741   Dual objective     =         32980.551421
+Iteration: 70022   Dual objective     =         32980.493433
+Iteration: 70248   Dual objective     =         32980.437151
+Iteration: 70510   Dual objective     =         32980.392143
+Iteration: 70787   Dual objective     =         32980.380634
+Iteration: 71060   Dual objective     =         32980.368874
+Iteration: 71348   Dual objective     =         32980.333940
+Iteration: 71584   Dual objective     =         32980.320213
+Iteration: 71860   Dual objective     =         32980.315971
+Iteration: 72170   Dual objective     =         32980.225239
+Iteration: 72425   Dual objective     =         32980.207154
+Iteration: 72713   Dual objective     =         32980.186680
+Elapsed time = 195.41 sec. (40000.92 ticks, 72963 iterations)
+Iteration: 72971   Dual objective     =         32980.171803
+Iteration: 73203   Dual objective     =         32980.158707
+Iteration: 73446   Dual objective     =         32980.131163
+Iteration: 73690   Dual objective     =         32980.108850
+Iteration: 73959   Dual objective     =         32980.074020
+Iteration: 74233   Dual objective     =         32980.050754
+Iteration: 74491   Dual objective     =         32980.041796
+Iteration: 74726   Dual objective     =         32980.034139
+Iteration: 74963   Dual objective     =         32980.024301
+Iteration: 75216   Dual objective     =         32980.006785
+Iteration: 75469   Dual objective     =         32979.998258
+Iteration: 75732   Dual objective     =         32979.989356
+Iteration: 75983   Dual objective     =         32979.982820
+Iteration: 76253   Dual objective     =         32979.972828
+Iteration: 76508   Dual objective     =         32979.960828
+Iteration: 76759   Dual objective     =         32979.955794
+Iteration: 77031   Dual objective     =         32979.944947
+Iteration: 77296   Dual objective     =         32979.933177
+Iteration: 77567   Dual objective     =         32979.926407
+Iteration: 77851   Dual objective     =         32979.919241
+Iteration: 78090   Dual objective     =         32979.917866
+Removing perturbation.
+Iteration: 78176   Dual infeasibility =             0.000005
+Iteration: 78178   Dual objective     =         32979.923459
+
+Iteration log . . .
+Iteration:     1   Dual objective     =         32979.923454
+Root relaxation solution time = 226.90 sec. (46561.81 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0    32979.9235  8409                  32979.9235    78245         
+      0     0    32977.6286  9096                   Cuts: 406    85560         
+      0     0    32975.9123  9440                   Cuts: 463    94959         
+      0     0    32974.2022  9702               ZeroHalf: 418   104206         
+      0     0    32972.8051 10336               ZeroHalf: 462   114440         
+      0     0    32970.3480 10478               ZeroHalf: 419   126628         
+      0     0    32968.4884 10313               ZeroHalf: 463   139272         
+      0     0    32967.1019 11025               ZeroHalf: 393   151860         
+      0     0    32965.7183 11125               ZeroHalf: 487   163171         
+Heuristic still looking.
+Heuristic still looking.
+      0     2    32965.7183 11125                  32965.7176   163171         
+Elapsed time = 1145.95 sec. (273870.40 ticks, tree = 0.01 MB, solutions = 0)
+      1     3    32965.6958 10743                  32965.6958   168085         
+      2     4    32964.9203 10547                  32965.6958   174872         
+      4     6    32964.9203 10545                  32965.6958   174905         
+      6     8    32964.9061 10377                  32965.6958   176523         
+      7     9    32964.8263 10377                  32965.6958   177822         
+      8    10    32964.9042 10341                  32965.6958   179543         
+      9    11    32964.9042 10332                  32965.6958   180311         
+     10    12    32964.8499 10384                  32965.6958   181412         
+     11    13    32964.9002 10285                  32965.6958   181690         
+     13    15    32964.5617 10313                  32965.6958   182377         
+Elapsed time = 1258.51 sec. (300785.18 ticks, tree = 0.21 MB, solutions = 0)
+     14    16    32964.6702 10362                  32965.6958   182972         
+     15    17    32964.3883 10295                  32965.6958   183244         
+     20    22    32964.3827 10223                  32965.6958   183850         
+     24    26    32964.3766 10169                  32965.6958   185015         
+     26    28    32964.3175 10216                  32965.6958   185995         
+     27    29    32963.9171 10227                  32965.6958   187607         
+     28    30    32964.1272 10220                  32965.6958   188890         
+     29    31    32964.0957 10195                  32965.6958   189525         
+     30    32    32964.0845 10216                  32965.6958   192380         
+     32    34    32964.0813 10340                  32965.6958   194215         
+Elapsed time = 1521.48 sec. (362019.23 ticks, tree = 0.54 MB, solutions = 0)
+     33    35    32964.0406 10093                  32965.6958   197630         
+     34    36    32963.9938 10252                  32965.6958   198399         
+     36    38    32964.0290 10142                  32965.6958   199740         
+     37    39    32964.0366 10079                  32965.6958   200461         
+     38    40    32964.0141 10253                  32965.6958   201850         
+     40    42    32964.0141 10244                  32965.6958   204766         
+     42    44    32963.9767 10045                  32965.6958   207027         
+     43    45    32963.9767 10046                  32965.6958   209574         
+     45    47    32963.9767 10063                  32965.6958   211439         
+     46    48    32963.9725 10102                  32965.6958   212988         
+Elapsed time = 1622.22 sec. (386351.04 ticks, tree = 1.30 MB, solutions = 0)
+     47    49    32963.9765 10042                  32965.6958   214254         
+     49    51    32963.9721 10040                  32965.6958   215121         
+     50    52    32963.9721 10031                  32965.6958   215135         
+     52    54    32963.9712 10085                  32965.6958   216099         
+     53    55    32963.9692  9932                  32965.6958   217016         
+     55    57    32963.9692  9966                  32965.6958   217277         
+     60    62    32963.9682 10070                  32965.6958   218014         
+     64    66    32963.9680 10044                  32965.6958   218788         
+     67    69    32963.9500  9938                  32965.6958   220475         
+     69    71    32963.9388  9866                  32965.6958   222131         
+Elapsed time = 1762.83 sec. (417768.42 ticks, tree = 2.20 MB, solutions = 0)
+     70    72    32963.9328 10002                  32965.6958   223159         
+     71    73    32963.9136  9892                  32965.6958   224025         
+     74    76    32963.8721  9879                  32965.6958   227102         
+     76    78    32963.8651  9969                  32965.6958   229949         
+     78    80    32963.8603  9901                  32965.6958   231269         
+     79    81    32963.8565  9844                  32965.6958   232225         
+     81    83    32951.8599 10177                  32965.6958   238801         
+     82    84    32963.8288  9745                  32965.6958   239890         
+     84    86    32961.5247  9837                  32965.6958   242000         
+     85    87    32963.8288  9760                  32965.6958   242027         
+Elapsed time = 1893.24 sec. (448999.23 ticks, tree = 2.46 MB, solutions = 0)
+     88    90    32963.7978  9865                  32965.6958   245657         
+     90    92    32963.8272  9815                  32965.6958   245824         
+     93    95    32963.5881  9974                  32965.6958   246886         
+     94    96    32963.8142  9884                  32965.6958   247719         
+     95    97    32963.8091 10006                  32965.6958   248289         
+     98   100    32963.8142  9931                  32965.6958   248935         
+    101   103    32963.2512  9884                  32965.6958   250783         
+    103   105    32963.7896  9920                  32965.6958   251905         
+    107   109    32963.8124  9885                  32965.6958   252503         
+    112   114    32963.8103  9921                  32965.6958   253522         
+Elapsed time = 1975.52 sec. (469441.20 ticks, tree = 3.44 MB, solutions = 0)
+    114   116    32963.7685  9989                  32965.6958   256585         
+    115   117    32963.8006  9927                  32965.6958   258472         
+    117   119    32963.7751  9873                  32965.6958   259597         
+    118   120    32963.7531  9878                  32965.6958   260472         
+    119   121    32963.7557  9907                  32965.6958   261828         
+    120   122    32963.6049  9934                  32965.6958   265219         
+    121   123    32963.7457  9934                  32965.6958   268963         
+    123   125    32963.7457  9927                  32965.6958   269102         
+    125   127    32963.7428  9828                  32965.6958   269772         
+    126   128    32963.7316  9880                  32965.6958   270432         
+Elapsed time = 2130.71 sec. (505932.10 ticks, tree = 4.69 MB, solutions = 0)
+    129   131    32963.7318  9984                  32965.6958   271946         
+    130   132    32963.7295  9956                  32965.6958   272550         
+    131   133    32963.7017  9885                  32965.6958   273725         
+    132   134    32963.5449  9841                  32965.6958   274979         
+    134   136    32963.4134  9589                  32965.6958   276293         
+    137   139    32963.4091  9629                  32965.6958   277223         
+    138   140    32963.4086  9660                  32965.6958   278260         
+    139   141    32963.3723  9827                  32965.6958   281115         
+    140   142    32963.3647  9570                  32965.6958   281847         
+    142   144    32963.3647  9615                  32965.6958   282612         
+Elapsed time = 2222.97 sec. (527777.86 ticks, tree = 7.51 MB, solutions = 0)
+    143   145    32963.3175  9742                  32965.6958   283574         
+    144   146    32963.2700  9678                  32965.6958   285664         
+    145   147    32963.2700  9688                  32965.6958   285678         
+    152   154    32963.2700  9685                  32965.6958   286279         
+    154   156    32963.1630  9750                  32965.6958   287876         
+    156   158    32963.1781  9849                  32965.6958   288880         
+    158   160    32963.1174  9869                  32965.6958   289494         
+    160   162    32963.1310  9773                  32965.6958   290648         
+    163   165    32963.1786  9783                  32965.6958   291368         
+    164   166    32963.1524  9675                  32965.6958   292090         
+Elapsed time = 2298.50 sec. (545404.16 ticks, tree = 12.92 MB, solutions = 0)
+    166   168    32963.0469  9736                  32965.6958   293793         
+    173   175    32963.0155  9694                  32965.6958   295649         
+    175   177    32962.9537  9639                  32965.6958   296343         
+    179   181    32962.9570  9682                  32965.6958   297128         
+    181   183    32962.9442  9616                  32965.6958   298371         
+    183   185    32962.9404  9718                  32965.6958   300402         
+    185   187    32962.9404  9704                  32965.6958   301800         
+    187   189    32962.9347  9602                  32965.6958   302394         
+    194   196    32962.9347  9573                  32965.6958   302946         
+    197   199    32962.8600  9570                  32965.6958   305299         
+Elapsed time = 2396.50 sec. (567549.24 ticks, tree = 21.78 MB, solutions = 0)
+    200   202    32962.8459  9536                  32965.6958   306245         
+    203   205    32962.6981  9935                  32965.6958   309359         
+    204   206    32962.6517  9641                  32965.6958   312033         
+    217   219    32962.5638  9620                  32965.6958   314744         
+    223   225    32962.4149  9906                  32965.6958   317332         
+    226   228    32962.3294  9751                  32965.6958   319690         
+    237   239    32961.1865  9620                  32965.6958   321988         
+    238   240    32960.7609  9629                  32965.6958   324505         
+    246   248    32960.6773  9626                  32965.6958   327306         
+    251   253    32960.1866  9556                  32965.6958   329964         
+Elapsed time = 2625.76 sec. (621385.14 ticks, tree = 36.32 MB, solutions = 0)
+    256   258    32960.0173  9579                  32965.6958   332477         
+    259   261    32959.3313  9532                  32965.6958   335018         
+    261   263    32958.6761  9532                  32965.6958   337650         
+    270   272    32958.5839  9499                  32965.6958   340624         
+    279   281    32958.3068  9392                  32965.6958   342973         
+    280   282    32958.3192  9310                  32965.6958   342980         
+    282   284    32956.5569  9431                  32965.6958   347512         
+    285   287    32957.8203  9303                  32965.6958   350249         
+    291   293    32957.5947  9542                  32965.6958   353910         
+    298   300    32957.3353  9284                  32965.6958   356422         
+Elapsed time = 2849.20 sec. (675304.22 ticks, tree = 48.75 MB, solutions = 0)
+    301   303    32957.1432  9227                  32965.6958   358739         
+    311   313    32957.0549  9350                  32965.6958   361041         
+    319   321    32956.9691  9064                  32965.6958   363445         
+    325   327    32956.6810  9159                  32965.6958   365940         
+    330   332    32955.8897  9111                  32965.6958   368303         
+    337   339    32954.7792  9368                  32965.6958   371075         
+    342   344    32955.1683  9293                  32965.6958   373380         
+    355   357    32954.7306  9214                  32965.6958   375625         
+    362   364    32954.5633  9271                  32965.6958   378083         
+    367   369    32954.3400  9144                  32965.6958   380363         
+Elapsed time = 3018.40 sec. (717670.41 ticks, tree = 67.43 MB, solutions = 0)
+    374   376    32954.1758  9096                  32965.6958   382552         
+    382   384    32953.9982  9020                  32965.6958   385092         
+    392   394    32953.8470  8939                  32965.6958   387855         
+    397   399    32950.8970  9129                  32965.6958   390962         
+    400   402    32953.7745  8825                  32965.6958   391564         
+    409   411    32953.6037  8906                  32965.6958   394095         
+    413   415    32953.3629  9034                  32965.6958   397216         
+    423   425    32953.3564  9018                  32965.6958   399763         
+    428   430    32953.1360  8844                  32965.6958   402952         
+    433   435    32952.8956  8877                  32965.6958   405172         
+Elapsed time = 3218.05 sec. (767970.81 ticks, tree = 85.61 MB, solutions = 0)
+    439   441    32952.7026  8856                  32965.6958   407356         
+    445   447    32952.4276  9031                  32965.6958   410145         
+    449   451    32951.9208  8844                  32965.6958   412872         
+    452   454    32951.5688  8877                  32965.6958   415341         
+    456   458    32951.4125  8778                  32965.6958   417784         
+    462   464    32951.1749  8692                  32965.6958   420018         
+    469   471    32951.0103  8731                  32965.6958   422291         
+    476   478    32950.7227  8822                  32965.6958   424581         
+    481   483    32950.4297  8990                  32965.6958   426900         
+    485   487    32950.2754  8884                  32965.6958   429317         
+Elapsed time = 3384.04 sec. (810883.70 ticks, tree = 99.48 MB, solutions = 0)
+    491   491    32949.3746  8820                  32965.6958   432200         
+    497   497    32949.4193  8830                  32965.6958   434661         
+    503   503    32949.2225  8790                  32965.6958   436898         
+    508   508    32948.9074  8898                  32965.6958   439145         
+    514   514    32948.3982  8670                  32965.6958   441974         
+    520   520    32948.1465  8853                  32965.6958   444217         
+    526   526    32947.4106  8550                  32965.6958   447105         
+    532   532    32947.2221  8438                  32965.6958   449427         
+    540   540    32947.1588  8456                  32965.6958   451511         
+    549   549    32946.9244  8549                  32965.6958   454144         
+Elapsed time = 3566.90 sec. (855446.83 ticks, tree = 116.42 MB, solutions = 0)
+    553   553    32946.4515  8437                  32965.6958   456473         
+
+Zero-half cuts applied:  668
+Gomory fractional cuts applied:  19
+
+Root node processing (before b&c):
+  Real time             = 1145.64 sec. (273779.89 ticks)
+Sequential b&c:
+  Real time             = 2454.39 sec. (589893.88 ticks)
+                          ------------
+Total (root+branch&cut) = 3600.04 sec. (863673.77 ticks)
+
+--- MIP status (108): time limit exceeded, no integer solution.
+--- Cplex Time: 3600.05sec (det. 863675.36 ticks)
+
+CPLEX Error  1217: No solution exists.
+--- Resource limit exceeded, no integer solution found
+--- Reading solution for model mymodel
+--- Executing after solve: elapsed 1:00:08.473
+--- gams_0256_064_32_04_0.67_05_0.25_0.90_09_problem.txt(59990) 248 Mb--- gams_0256_064_32_04_0.67_05_0.25_0.90_09_problem.txt(60007) 248 Mb--- gams_0256_064_32_04_0.67_05_0.25_0.90_09_problem.txt(60010) 248 Mb
+--- Putfile results C:\Users\MariaSosnovskaya\Downloads\WfmGams3\problems\gams_0256_064_32_04_0.67_05_0.25_0.90_09_results.txt
+*** Status: Normal completion
+--- Job gams_0256_064_32_04_0.67_05_0.25_0.90_09_problem.txt Stop 02/25/21 12:15:40 elapsed 1:00:09.677
